@@ -42,6 +42,7 @@ public class SearchController {
         model.addAttribute("userSelection", searchType);
         model.addAttribute("columns", ListController.columnChoices);
         model.addAttribute("jobs", jobs);
+        model.addAttribute("choice", searchType);
 
         return "search";
     }
